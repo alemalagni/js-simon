@@ -3,6 +3,8 @@ const clock = setInterval( scadenza, 1000 );
 let sec = 30;
 const time = document.getElementById("time");
 const text = document.getElementById("text");
+const blockNumeri = document.getElementById("numeri");
+const blockForm = document.getElementById("form");
 
 // Funzioni
 function scadenza(){ 
