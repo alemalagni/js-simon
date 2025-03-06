@@ -3,7 +3,7 @@ const clock = setInterval( scadenza, 1000 );
 let sec = 30;
 
 // Funzioni
-scadenza() {
+function scadenza(){ 
     sec =- 1;
 }
 
