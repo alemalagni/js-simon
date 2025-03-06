@@ -5,7 +5,7 @@ const time = document.getElementById("time");
 const text = document.getElementById("text");
 const blockNumeri = document.getElementById("numeri");
 const blockForm = document.getElementById("form");
-const button = document.getElementsByTagName("button")
+const button = document.getElementById("button");
 
 // Funzioni
 function scadenza(){ 
