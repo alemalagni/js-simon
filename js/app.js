@@ -48,7 +48,7 @@ button.addEventListener('click',
             
             if ( errore ) {
                 warning.style.display = "block";
-                warning.className = "red";
+                warning.style.color = "red";
                 warning.innerHTML = `I numeri da indovinare sono tra 0 e 50`;
             } else {
                 warning.style.display = "block";
