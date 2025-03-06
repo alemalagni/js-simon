@@ -30,7 +30,16 @@ for ( let i = 0; i < 5; i++ ) {
 }
 
 // Form
-// for ( let i = 0; i < 5; i++ ) {
-//     const input = document.getElementsByClassName("input");
-//     input
-// }
+let foundNumber = [];
+button.addEventListener('click',
+    function () {
+        for ( let i = 0; i < 5; i++ ) {
+            const input = document.getElementsByClassName("input");
+            if ( savedNumber.includes(input[i].value) ) {
+                foundNumber.push(input[i]);
+            }
+            
+        }
+    }
+    
+)
