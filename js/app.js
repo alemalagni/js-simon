@@ -21,6 +21,6 @@ let savedNumber = [];
 for ( let i = 0; i < 5; i++ ) {
     const num = document.getElementsByClassName("numero");
     num[i].innerHTML = parseInt( Math.random() * 50 + 1);
-    savedNumber.push(num[i]);
+    savedNumber.push(num[i].innerHTML);
 }
 
