@@ -17,7 +17,7 @@ function scadenza(){
         clearInterval( clock );
         text.innerHTML = "Inserisci tutti i numeri che ti ricordi (l'ordine non è importante)"
         blockNumeri.style.display = "none";
-        blockForm.style.display = "block";
+        blockForm.style.display = "flex";
         button.style.display = "block";
     }
 }
