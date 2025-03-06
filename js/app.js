@@ -36,12 +36,16 @@ button.addEventListener('click',
     function () {
         for ( let i = 0; i < 5; i++ ) {
             const input = document.getElementsByClassName("input");
+            const warning = document.getElementById("warning");
+
             if ( savedNumber.includes(input[i].value) ) {
                 foundNumber.push(input[i]);
             }
             
+            warning.innerHTML = `Hai indovinato ${foundNumber.length} numeri! (${foundNumber})`
         }
 
+        
     }
     
 )
