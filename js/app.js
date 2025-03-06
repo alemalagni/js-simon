@@ -3,8 +3,6 @@ const clock = setInterval( scadenza, 1000 );
 let sec = 30;
 const time = document.getElementById("time");
 const text = document.getElementById("text");
-const blockNumeri = document.getElementById("numeri");
-const blockForm = document.getElementById("form");
 const button = document.getElementById("button");
 
 // Funzioni
@@ -13,6 +11,9 @@ function scadenza(){
     time.innerHTML = sec;
 
     if ( sec === 0 ){
+        const blockNumeri = document.getElementById("numeri");
+        const blockForm = document.getElementById("form");
+
         clearInterval( clock );
         text.innerHTML = "Inserisci tutti i numeri che ti ricordi (l'ordine non è importante)"
         blockNumeri.style.display = "none";
@@ -40,6 +41,7 @@ button.addEventListener('click',
             }
             
         }
+
     }
     
 )
