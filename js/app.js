@@ -43,7 +43,7 @@ button.addEventListener('click',
             if ( savedNumber.includes(input[i].value) ) {
                 foundNumber.push(input[i].value);
             } else if ( input[i].value < 0 || input[i].value > 50) {
-                
+                errore = true;
             }
             
             if ( errore ) {
