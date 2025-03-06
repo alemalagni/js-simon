@@ -43,12 +43,12 @@ button.addEventListener('click',
                 foundNumber.push(input[i].value);
             } else if ( input[i].value < 0 || input[i].value > 50) {
                 warning.style.display = "block";
-                warning.className = ".warning";
+                warning.className = "warning";
                 warning.innerHTML = `I numeri da indovinare sono tra 0 e 50`;
             }
             
             warning.style.display = "block";
-            warning.className = ".success";
+            warning.className = "success";
             warning.innerHTML = `Hai indovinato ${foundNumber.length} numeri! (${foundNumber})`;
         }
 
