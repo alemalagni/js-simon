@@ -2,7 +2,6 @@
 const clock = setInterval( scadenza, 1000 );
 let sec = 30;
 const time = document.getElementById("time");
-let endTime = false;
 const text = document.getElementById("text");
 
 // Funzioni
