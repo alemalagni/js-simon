@@ -4,7 +4,13 @@ let sec = 30;
 
 // Funzioni
 function scadenza(){ 
-    sec =- 1;
+    sec -= 1;
+    console.log(sec)
+
+    if ( sec === 0 ){
+        clearInterval( clock );
+    }
 }
 
 // Script
+
