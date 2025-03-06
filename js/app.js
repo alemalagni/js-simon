@@ -27,3 +27,8 @@ for ( let i = 0; i < 5; i++ ) {
     savedNumber.push(num[i].innerHTML);
 }
 
+// Form
+// for ( let i = 0; i < 5; i++ ) {
+//     const input = document.getElementsByClassName("input");
+//     input
+// }
