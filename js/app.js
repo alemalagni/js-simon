@@ -31,18 +31,20 @@ for ( let i = 0; i < 5; i++ ) {
 }
 
 // Form
-let foundNumber = [];
 button.addEventListener('click',
     function () {
+        let foundNumber = [];
+
         for ( let i = 0; i < 5; i++ ) {
             const input = document.getElementsByClassName("input");
             const warning = document.getElementById("warning");
 
             if ( savedNumber.includes(input[i].value) ) {
-                foundNumber.push(input[i]);
+                foundNumber.push(input[i].value);
             }
             
-            warning.innerHTML = `Hai indovinato ${foundNumber.length} numeri! (${foundNumber})`
+            warning.style.display = "block";
+            warning.innerHTML = `Hai indovinato ${foundNumber.length} numeri! (${foundNumber})`;
         }
 
         
