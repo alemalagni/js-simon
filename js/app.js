@@ -34,6 +34,7 @@ for ( let i = 0; i < 5; i++ ) {
 button.addEventListener('click',
     function () {
         let foundNumber = [];
+        let errore = false;
 
         for ( let i = 0; i < 5; i++ ) {
             const input = document.getElementsByClassName("input");
@@ -42,17 +43,18 @@ button.addEventListener('click',
             if ( savedNumber.includes(input[i].value) ) {
                 foundNumber.push(input[i].value);
             } else if ( input[i].value < 0 || input[i].value > 50) {
-                warning.style.display = "block";
-                warning.className = "warning";
-                warning.innerHTML = `I numeri da indovinare sono tra 0 e 50`;
+                
             }
             
-            warning.style.display = "block";
-            warning.className = "success";
-            warning.innerHTML = `Hai indovinato ${foundNumber.length} numeri! (${foundNumber})`;
+            if ( errore ) {
+                warning.style.display = "block";
+                warning.className = "red";
+                warning.innerHTML = `I numeri da indovinare sono tra 0 e 50`;
+            } else {
+                warning.style.display = "block";
+                warning.style.color = "green";
+                warning.innerHTML = `Hai indovinato ${foundNumber.length} numeri! (${foundNumber})`;
+            }
         }
-
-        
     }
-    
 )
