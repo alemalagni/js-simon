@@ -5,6 +5,7 @@ const time = document.getElementById("time");
 const text = document.getElementById("text");
 const blockNumeri = document.getElementById("numeri");
 const blockForm = document.getElementById("form");
+const button = document.getElementsByTagName("button")
 
 // Funzioni
 function scadenza(){ 
@@ -16,6 +17,7 @@ function scadenza(){
         text.innerHTML = "Inserisci tutti i numeri che ti ricordi (l'ordine non è importante)"
         blockNumeri.style.display = "none";
         blockForm.style.display = "block";
+        button.style.display = "block";
     }
 }
 
